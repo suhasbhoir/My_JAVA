@@ -26,6 +26,7 @@ public class my_tut_04_rock_paper_scissor {
             System.out.println("You Enter 'SCISSOR'");
         }
         int systemmove = rd.nextInt(3) + 1;
+
         if (systemmove == 1){
             System.out.println("Computer entered for 'ROCK'");
         }
@@ -35,42 +36,21 @@ public class my_tut_04_rock_paper_scissor {
         else{
             System.out.println("Computer entered for 'SCISSOR'");
         }
-        if (mymove == 1 && systemmove == 1 ){
+        if (mymove == 1 && systemmove == 1 || mymove == 2 && systemmove == 2
+                || mymove == 3 && systemmove == 3 ){
             System.out.println("You Tied");
         }
-        else if (mymove == 1 && systemmove == 2){
-            System.out.println("You LOST!!!!");
-        }
-        else if (mymove == 1 && systemmove == 3){
+        else if (mymove == 1 && systemmove == 3 || mymove == 2 && systemmove == 1
+                || mymove == 3 && systemmove == 2) {
             System.out.println("You WIN!!!!");
         }
-        if (mymove == 2 && systemmove == 2 ){
-            System.out.println("You Tied");
-        }
-        else if (mymove == 2 && systemmove == 1){
-            System.out.println("You WIN!!!!");
-        }
-        else if (mymove == 2 && systemmove == 3){
-            System.out.println("You Lost!!!!");
-        }
-        if (mymove == 3 && systemmove == 3 ){
-            System.out.println("You Tied");
-        }
-        else if (mymove == 3 && systemmove == 1){
-            System.out.println("You LOST!!!!");
-        }
-        else if (mymove == 3 && systemmove == 2){
-            System.out.println("You WIN!!!!");
-        }
+
         else if (mymove != 1 && mymove != 2 && mymove != 3) {
-            System.out.println("Hence Computer Enter correct match but you entered Invalid Input, so there is no any result for this move");
+            System.out.println("Hence Computer Enter correct match but you entered Invalid Input, " +
+                    "so there is no any result for this move");
         }
         else {
-            System.out.println("\n----------------------------------------------");
+            System.out.println("You LOST!!!!");
         }
-
-
-
-
     }
 }
