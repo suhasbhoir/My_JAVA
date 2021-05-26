@@ -1,3 +1,5 @@
+package myjava.myproject;
+
 import java.util.Locale;
 
 public class test2_num_format {

@@ -1,3 +1,4 @@
+package myjava.myproject;
 
 class MyEmployee{
 

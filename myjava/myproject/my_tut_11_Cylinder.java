@@ -1,3 +1,5 @@
+package myjava.myproject;
+
 import java.util.Scanner;
 
 class Cylinder{

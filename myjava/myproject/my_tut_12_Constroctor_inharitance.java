@@ -1,3 +1,4 @@
+package myjava.myproject;
 
 class Employee_Base{
     public Employee_Base() {
