@@ -5,8 +5,6 @@ import java.util.Scanner;
 class swap_Two_Number{
     int x;
     int y;
-
-
 }
 
 public class Lab_Assignment_Q1_Activity_i {
@@ -14,7 +12,22 @@ public class Lab_Assignment_Q1_Activity_i {
         Scanner sc=new Scanner(System.in);
         int x;
         int y;
+
         x = sc.nextInt();
+
+        System.out.print("Please enter the number for x: ");
+        x = sc.nextInt();
+        System.out.print("Please enter the number Y: ");
+        y = sc.nextInt();
+        System.out.printf("\nNumber before swap x = %d and y = %d", x, y);
+        x = x+y;
+        y = x-y;
+        x = x-y;
+        System.out.printf("\nNumber after swap x = %d and y = %d", x, y);
+
+
+        
+
 
 
     }
